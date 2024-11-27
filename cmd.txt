@@ -1,1 +1,6 @@
 zip lambda_function.zip lambda_function.py
+
+# AWS CLI commands to verify
+aws budgets describe-budgets
+aws sns list-subscriptions
+aws lambda get-function --function-name StopResourcesLambda
