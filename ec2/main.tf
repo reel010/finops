@@ -25,7 +25,7 @@ resource "aws_security_group" "ec2_sg" {
 
 # Launch 10 t3.micro EC2 instances
 resource "aws_instance" "t3_micro_instance" {
-  count         = 10
+  count         = 1
   ami           = "ami-0166fe664262f664c"  # Replace with the latest Amazon Linux 2 AMI in your region
   instance_type = "t2.small"
   key_name      = "try"  # Replace with your actual EC2 key pair name

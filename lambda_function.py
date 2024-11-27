@@ -4,7 +4,7 @@ ec2_client = boto3.client('ec2')
 rds_client = boto3.client('rds')
 
 def lambda_handler(event, context):
-    # Log the incoming event for debugging
+    
     print(f"Received event: {event}")
     
     # Stop EC2 instances
